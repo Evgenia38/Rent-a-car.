@@ -18,7 +18,7 @@ img {
     height: 100%;
 }
 
-.navbar {
+nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -99,6 +99,7 @@ button:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8% 0%;
     padding-left: 8%;
     gap: 50px;
@@ -236,7 +237,7 @@ button:hover {
     .logo{
         width: 150px;
     }
-    navbar{
+    nav{
       position: relative;
       z-index: 999;
     }
@@ -284,11 +285,14 @@ button:hover {
     .bottom_box{
         width: 28%;
     }
+    .btns{
+        transform: translateX(-15px);
+    }
 }
 
 @media (max-width:500px) {
-    .btns {
-       transform: translateX(-5px);
+    .btns button{
+       transform: translateX(-15px);
     }
     .bottom_box{
         width: 100%;
